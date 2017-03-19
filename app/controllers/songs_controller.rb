@@ -1,10 +1,10 @@
 class SongsController < ApplicationController
   def new
-    @song = Artist.find_by(id: user_id).songs.build
+    @song = @artist.songs.new
   end
 
   def create
-    @song = Artist.find_by(id: user_id).songs.build(song_params)
+    @song = @artist.songs.create(song_params)
 
     if @song.save
       redirect_to @song, notice: "Song successfully created"

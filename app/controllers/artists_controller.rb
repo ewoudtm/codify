@@ -11,4 +11,12 @@ class ArtistsController < ApplicationController
     @songs = @artist.songs
   end
 
+  def destroy
+
+    @artist = Artist.find(params[:id])
+    @artist.destroy
+    redirect_to root_path, notice: "Artist successfully deleted"
+
+  end
+
 end
