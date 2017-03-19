@@ -1,0 +1,13 @@
+<h1><%= @artist.name %></h1>
+
+<h3>Discography</h3>
+<% @songs.each do |song| %>
+  <div class="panel panel-default">
+    <div class="panel-heading preview">
+      <%= song.title %>
+    </div>
+    <div class="panel-body">
+      <%= link_to "Delete", song_path( song.id ), class: "btn btn-default", method: :delete, data: { confirm: "Are you sure?" } %>
+    </div>
+  </div>
+<% end %>
