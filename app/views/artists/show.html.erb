@@ -7,7 +7,7 @@
       <%= song.title %>
     </div>
     <div class="panel-body">
-      <%= link_to "Delete", song_path( song.id ), class: "btn btn-default", method: :delete, data: { confirm: "Are you sure?" } %>
+      <%= link_to "Delete Song", [song.artist, song], class: "btn btn-default", method: :delete, data: { confirm: "Are you sure?" } %>
     </div>
   </div>
 <% end %>
@@ -16,7 +16,11 @@
     Actions
   </div>
   <div class="panel-body">
-    <%= link_to "Add New Song", new_song_path, class: "btn btn-default"%>
+    <%= form_for([@artist, @artist.songs.create]) do |f| %>
+      <p><%= f.text_field :title %></p>
+      <p><%= f.submit %></p>
+    <% end %>
+
     <%= link_to "Delete Artist", artist_path(@artist), class: "btn btn-default", method: :delete, data: { confirm: "Are you sure?" } %>
   </div>
 </div>

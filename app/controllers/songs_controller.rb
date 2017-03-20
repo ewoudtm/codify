@@ -1,13 +1,11 @@
 class SongsController < ApplicationController
-  def new
-    @song = @artist.songs.new
-  end
+  before_action :set_artist
 
   def create
-    @song = @artist.songs.create(song_params)
+    @song = @artist.songs.new(song_params)
 
     if @song.save
-      redirect_to @song, notice: "Song successfully created"
+      redirect_to artist_path(@artist.id), notice: "Song successfully created"
     else
       render :new
     end
@@ -24,10 +22,11 @@ class SongsController < ApplicationController
   end
 
   private
+  def set_artist
+    @artist = Artist.find(params[:artist_id])
+  end
 
   def song_params
     params.require(:song).permit(:title)
   end
-
-
 end

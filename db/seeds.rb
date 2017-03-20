@@ -3,18 +3,18 @@ Artist.destroy_all
 
 #---- Artists ----
 
-velvet_underground = Artist.create(name: "The Velvet Underground", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489935423/codaisseurify/velvet_underground/velvet-underground-the-50f1828d7c7f6.jpg")
+velvet_underground = Artist.create(name: "The Velvet Underground", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_fit,h_300,w_300/v1489935423/codaisseurify/velvet_underground/velvet-underground-the-50f1828d7c7f6.jpg")
 smashing_pumpkins = Artist.create(name: "The Smashing Pumpkins", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884851/codaisseurify/smashing_pumpkins/smashing_pumpkins.jpg")
-nirvana = Artist.create(name: "Nirvana", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884892/codaisseurify/nirvana/nirvana.jpg")
-green_day = Artist.create(name: "Green Day", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884942/codaisseurify/green_day/green_day2.jpg")
-rammstein = Artist.create(name: "Rammstein", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489935902/codaisseurify/rammstein/Rammstein_LIFAD.jpg")
-nick_cave_bad_seeds = Artist.create(name: "Nick Cave & The Bad Seeds", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884921/codaisseurify/nick_cave/nick-cave.jpg")
-david_bowie = Artist.create(name: "David Bowie", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884961/codaisseurify/david_bowie/David-Bowie-Bonds-Treveri-Capital-Intellectual-Property-Debt-Finance.jpg")
-depeche_mode = Artist.create(name: "Depeche Mode", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489936087/codaisseurify/depeche_mode/depeche-mode.jpg")
-joy_division = Artist.create(name: "Joy Division", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489936297/codaisseurify/joy_division/joy-division-pic.jpg")
-the_cure = Artist.create(name: "The Cure", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884805/codaisseurify/cure/the_cure.jpg")
-bloc_party = Artist.create(name: "Bloc Party", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884984/codaisseurify/bloc_party/bloc-party.jpg")
-the_verve = Artist.create(name: "The Verve", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884774/codaisseurify/verve/1998NMEAwardsVerve021111.jpg")
+nirvana = Artist.create(name: "Nirvana", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_limit,h_300,w_300/v1489884892/codaisseurify/nirvana/nirvana.jpg")
+green_day = Artist.create(name: "Green Day", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_limit,h_300,w_300/v1489884942/codaisseurify/green_day/green_day2.jpg")
+rammstein = Artist.create(name: "Rammstein", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_fit,h_300,w_300/v1489935902/codaisseurify/rammstein/Rammstein_LIFAD.jpg")
+nick_cave_bad_seeds = Artist.create(name: "Nick Cave & The Bad Seeds", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_fit,h_300,w_300/v1489884921/codaisseurify/nick_cave/nick-cave.jpg")
+david_bowie = Artist.create(name: "David Bowie", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_fit,h_300,w_300/v1489884961/codaisseurify/david_bowie/David-Bowie-Bonds-Treveri-Capital-Intellectual-Property-Debt-Finance.jpg")
+depeche_mode = Artist.create(name: "Depeche Mode", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_fit,h_300,w_300/v1489936087/codaisseurify/depeche_mode/depeche-mode.jpg")
+joy_division = Artist.create(name: "Joy Division", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_fit,h_300,w_300/v1489936297/codaisseurify/joy_division/joy-division-pic.jpg")
+the_cure = Artist.create(name: "The Cure", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_fit,h_300,w_300/v1489884805/codaisseurify/cure/the_cure.jpg")
+bloc_party = Artist.create(name: "Bloc Party", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/c_limit,h_300,w_300/v1489884984/codaisseurify/bloc_party/bloc-party.jpg")
+the_verve = Artist.create(name: "The Verve", image_url: "http://res.cloudinary.com/ewoudtm/image/upload/v1489884774/codaisseurify/verve/the-verve-5.jpg")
 # #---- Photos ----
 #
 # photo_velvet_underground = Photo.create(image: "http://res.cloudinary.com/ewoudtm/image/upload/v1489935423/codaisseurify/velvet_underground/velvet-underground-the-50f1828d7c7f6.jpg", artist: velvet_underground)
