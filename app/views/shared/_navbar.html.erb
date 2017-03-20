@@ -15,7 +15,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artists<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#root">Artist Index</a></li>
+            <li><a href="/">Artist Index</a></li>
             <li role="separator" class="divider"></li>
             <% @artists.each do |artist| %>
               <li><%= link_to artist.name, artist_path(artist.id) %></li>

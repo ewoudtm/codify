@@ -1,5 +1,16 @@
-<h1>Artists</h1>
 
-<% @artists.each do |artist| %>
-  <p><%= image_tag artist.image_url %><%= link_to artist.name, artist_path(artist.id) %></p>
-<% end %>
+<div class="jumbotron">
+  <h1>Artists</h1>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <% @artists.each do |artist| %>
+    <div class="thumbnail">
+      <%= image_tag artist.image_url %>
+      <div class="caption">
+        <h3><%= link_to artist.name, artist_path(artist.id) %></h3>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
