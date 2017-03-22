@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'carrierwave', '0.11.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -59,6 +61,8 @@ end
 group :test do
   gem 'capybara', '~> 2.9', '>= 2.9.1'
 end
+
+
 
 # Use Bootstrap for styling
 gem 'bootstrap-sass', '~> 3.3.6'
